@@ -1,21 +1,24 @@
 # Formation Web Python – 1 mois (Django / Flask / FastAPI)
 
-> Objectif : En 4 semaines, développer et déployer une vraie appli web/API en Django, Flask et FastAPI”.
+> Objectif : En 4 semaines  
+> “Développer et déployer une vraie appli web/API en Django, Flask et FastAPI”.
 
 ---
 
 ## 0. Pré-requis recommandés
 
-Avant d’attaquer le mois, ton collègue doit idéalement :
+Avant d’attaquer le mois, il est recommandé de :
 
-- ✅ Savoir écrire du Python de base (variables, fonctions, boucles, classes).
-- ✅ Connaître un minimum la POO.
-- ✅ Comprendre les bases du web : HTTP, requêtes, réponses, JSON, REST.
-- ✅ Avoir déjà utilisé un terminal / Git de base.
+- Savoir écrire du Python de base (variables, fonctions, boucles, classes).
+- Connaître un minimum la POO.
+- Comprendre les bases du web : HTTP, requêtes, réponses, JSON, REST.
+- Avoir déjà utilisé un terminal / Git de base.
 
-Pour se mettre à niveau rapidement en Python (facultatif mais conseillé) :  
-- Parcours **“Développeur d’application Python”** – OpenClassrooms (chapitres sur Python de base)
-  👉 https://static.oc-static.com/syllabus/518-developpeur-dapplication-python-1-fr-fr-standard.pdf  
+Pour se mettre à niveau rapidement en Python :
+
+- Parcours “Développeur d’application Python” – OpenClassrooms (parties Python de base)  
+  PDF de syllabus :  
+  https://static.oc-static.com/syllabus/518-developpeur-dapplication-python-1-fr-fr-standard.pdf  
 
 ---
 
@@ -23,20 +26,22 @@ Pour se mettre à niveau rapidement en Python (facultatif mais conseillé) :
 
 À faire AVANT de commencer le jour 1 :
 
-- **Python 3.10+**
-- **pip** + **venv**
-- **Git** + compte GitHub / GitLab
-- Un IDE :
-  - VS Code ( + extensions Python, Pylance, GitLens, Django)
-- **PostgreSQL** ou **SQLite** pour commencer
-- **Postman** / **Insomnia** pour tester les APIs
-- **Navigateur** (Chrome / Firefox avec DevTools)
+- Python 3.10+
+- pip + venv
+- Git + compte GitHub / GitLab
+- VS Code (extensions : Python, Pylance, GitLens, Django)
+- PostgreSQL ou au minimum SQLite (intégré)
+- Postman ou Insomnia pour tester les APIs
+- Navigateur (Chrome / Firefox avec DevTools)
 
-Docs officielles (à garder en favoris) :
+Docs officielles à garder dans les favoris :
 
-- Django : https://docs.djangoproject.com/fr/5.2/ :contentReference[oaicite:1]{index=1}  
-- Flask : https://flask.palletsprojects.com/  
-- FastAPI : https://fastapi.tiangolo.com/  
+- Django :  
+  https://docs.djangoproject.com/fr/5.2/
+- Flask :  
+  https://flask.palletsprojects.com/
+- FastAPI :  
+  https://fastapi.tiangolo.com/
 
 ---
 
@@ -48,7 +53,8 @@ Docs officielles (à garder en favoris) :
 - **Semaine 4 :** FastAPI + microservices + projet final orienté data
 
 Chaque semaine :
-- 5 jours “cours + exos”
+
+- 5 jours “cours + exercices”
 - 1 jour “mini-projet”
 - 1 jour “révision / code review / refacto”
 
@@ -66,18 +72,20 @@ Chaque semaine :
 
 ### Jour 1 – Rappels Web & Python
 
-**Théorie / Cours**
+**Cours / Théorie**
 
-- Revoir Python (fonctions, classes, modules, virtualenv) – via sections Python de ce syllabus OC :contentReference[oaicite:2]{index=2}  
-  👉 https://static.oc-static.com/syllabus/518-developpeur-dapplication-python-1-fr-fr-standard.pdf  
-- Comprendre HTTP, REST, JSON :
-  - Article d’intro REST (au choix, par ex. MDN : https://developer.mozilla.org/fr/docs/Glossary/REST)
+- Python : revoir les bases dans le syllabus OC :  
+  https://static.oc-static.com/syllabus/518-developpeur-dapplication-python-1-fr-fr-standard.pdf  
+- HTTP, REST, JSON :  
+  Introduction REST (MDN) :  
+  https://developer.mozilla.org/fr/docs/Glossary/REST  
 
-**Exercices**
+**Exercice**
 
 - Écrire un script Python qui :
-  - Consomme une API publique (ex. https://jsonplaceholder.typicode.com/posts)
-  - Affiche les résultats au format JSON formaté.
+  - Consomme une API publique (exemple) :  
+    https://jsonplaceholder.typicode.com/posts
+  - Affiche les résultats en JSON formaté dans le terminal.
 
 ---
 
@@ -85,11 +93,10 @@ Chaque semaine :
 
 **Cours**
 
-- OpenClassrooms – **“Concevez un site avec Flask”** :contentReference[oaicite:3]{index=3}  
-  👉 https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask  
-  (Objectif : suivre au moins les chapitres 1 et 2)
+- OpenClassrooms – “Concevez un site avec Flask”  
+  https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask  
 
-**Exos**
+**Exercices**
 
 - Créer une app Flask minimale :
   - `/` → renvoie “Hello Flask”
@@ -100,17 +107,17 @@ Chaque semaine :
 
 ### Jour 3 – Flask : Templates & Formulaires
 
-**Cours (OC + docs)**
+**Cours**
 
-- Chapitres d’OpenClassrooms sur les templates et formulaires :contentReference[oaicite:4]{index=4}  
-  👉 https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask/4525912-ajoutez-une-nouvelle-table-dans-la-base-de-donnees  
-  👉 https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask/4526533-testez-le-parcours-utilisateur-avec-les-tests-fonctionnels  
+- Continuer le cours Flask sur OpenClassrooms (chapitres sur templates & formulaires) :  
+  https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask/4525912-ajoutez-une-nouvelle-table-dans-la-base-de-donnees  
+  https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask/4526533-testez-le-parcours-utilisateur-avec-les-tests-fonctionnels  
 
-**Exos**
+**Exercices**
 
 - Page `/contact` avec formulaire (nom, email, message) :
-  - Validation simple côté serveur (champ obligatoire).
-  - Afficher un message de succès après envoi.
+  - Validation côté serveur (champs obligatoires).
+  - Affichage d’un message de succès après envoi.
 
 ---
 
@@ -118,17 +125,18 @@ Chaque semaine :
 
 **Cours**
 
-- Partie BDD du cours Flask OpenClassrooms :contentReference[oaicite:5]{index=5}  
-- Lire la section sur l’ORM dans Flask (SQLAlchemy) dans la doc :  
-  👉 https://flask.palletsprojects.com/en/latest/patterns/sqlalchemy/
+- Partie base de données du cours Flask :  
+  https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask/4525912-ajoutez-une-nouvelle-table-dans-la-base-de-donnees  
+- SQLAlchemy + Flask (modèle d’intégration proposé par la doc Flask) :  
+  https://flask.palletsprojects.com/en/latest/patterns/sqlalchemy/
 
-**Exos**
+**Exercices**
 
 - Créer un modèle `Article` (titre, contenu, date_creation).
 - Routes :
-  - `/articles` : lister les articles
+  - `/articles` : liste des articles
   - `/articles/<id>` : détail d’un article
-  - `/articles/new` : créer un article via formulaire
+  - `/articles/new` : créer un article via formulaire.
 
 ---
 
@@ -136,13 +144,14 @@ Chaque semaine :
 
 **Cours**
 
-- Partie tests Flask sur OpenClassrooms (pytest / flask-testing / Selenium) :contentReference[oaicite:6]{index=6}  
+- Partie tests Flask sur OpenClassrooms (tests fonctionnels) :  
+  https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask/4526533-testez-le-parcours-utilisateur-avec-les-tests-fonctionnels  
 
-**Exos**
+**Exercices**
 
-- Écrire des tests unitaires pour :
-  - La route `/` (retourne HTTP 200)
-  - La création d’un article
+- Écrire des tests unitaires / fonctionnels pour :
+  - La route `/` (HTTP 200 + texte attendu).
+  - La création d’un article.
 - Réorganiser le projet Flask :
   - `app/__init__.py`
   - `app/routes.py`
@@ -157,26 +166,26 @@ Chaque semaine :
 
 Fonctionnalités :
 
-- CRUD complet sur des notes (titre, contenu, date)
-- Templates propres (layout, navbar, footer)
-- Liste paginée
-- Recherche par mot-clé dans le titre
+- CRUD complet sur des notes (titre, contenu, date).
+- Templates propres (layout, navbar, footer).
+- Liste paginée.
+- Recherche par mot-clé dans le titre.
 
 **Livrable :**
 
-- Code + README expliquant comment lancer le projet
-- Screenshots de l’app
+- Code + README expliquant comment lancer le projet.
+- Screenshots de l’app.
 
 ---
 
 ### Jour 7 – Review & Git
 
 - Mettre le projet Flask sur GitHub.
-- Faire un `README.md` simple :
-  - Description
-  - Installation
-  - Commandes pour démarrer
-- Relire le code, supprimer code mort / print, ajouter quelques commentaires.
+- Rédiger un `README.md` avec :
+  - Description.
+  - Installation.
+  - Commandes pour démarrer.
+- Relire le code, supprimer le code mort ou inutile, ajouter quelques commentaires.
 
 ---
 
@@ -185,19 +194,19 @@ Fonctionnalités :
 ### Objectif de la semaine
 
 - Comprendre l’architecture MVT de Django.
-- Construire un site complet avec modèles, vues, templates, admin.
+- Construire un site complet avec modèles, vues, templates et admin.
 - Comprendre l’ORM, les migrations, les formulaires.
 
 ---
 
 ### Ressources principales
 
-- OpenClassrooms – **“Débutez avec le framework Django”** :contentReference[oaicite:7]{index=7}  
-  👉 https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django  
-- Django – Tutoriel officiel “Écriture de votre première application Django” :contentReference[oaicite:8]{index=8}  
-  👉 https://docs.djangoproject.com/fr/5.2/intro/tutorial01/  
-- Guide “Apprendre : Django” (parcours, ressources) :contentReference[oaicite:9]{index=9}  
-  👉 https://www.learnthings.fr/apprendre/informatique/langages-de-programmation/python/django/
+- OpenClassrooms – “Débutez avec le framework Django”  
+  https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django  
+- Django – Tutoriel officiel “Écriture de votre première application Django”  
+  https://docs.djangoproject.com/fr/5.2/intro/tutorial01/  
+- Guide “Apprendre : Django (Guide A à Z + Ressources)”  
+  https://www.learnthings.fr/apprendre/informatique/langages-de-programmation/python/django/
 
 ---
 
@@ -205,16 +214,18 @@ Fonctionnalités :
 
 **Cours**
 
-- Chapitres 1–2 du cours OC Django (installation, création de projet) :contentReference[oaicite:10]{index=10}  
-- Tutoriel officiel Django, part 1 (modèles, admin, premières vues) :contentReference[oaicite:11]{index=11}  
+- OpenClassrooms – chapitres 1–2 du cours Django :  
+  https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django  
+- Tutoriel officiel Django, partie 1 :  
+  https://docs.djangoproject.com/fr/5.2/intro/tutorial01/
 
-**Exos**
+**Exercices**
 
-- Créer un projet `library` :
-  - App `books`
-  - Modèle `Book` (titre, auteur, date_pub, résumé)
-  - Admin : pouvoir gérer les livres
-  - Affichage liste + détail avec templates.
+- Créer un projet `library`.
+- Créer une app `books`.
+- Modèle `Book` (titre, auteur, date_pub, résumé).
+- Activer le modèle dans l’admin et tester la création de livres.
+- Afficher une liste + page détail avec templates.
 
 ---
 
@@ -222,15 +233,17 @@ Fonctionnalités :
 
 **Cours**
 
-- OC : sections sur MVT, URLconf, templates :contentReference[oaicite:12]{index=12}  
-- Tutoriel Django part 2–3 (vues, templates, URL) :contentReference[oaicite:13]{index=13}  
+- MVT, URLconf, templates dans le cours OC :  
+  https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django  
+- Tutoriel Django, parties 2 et 3 :  
+  https://docs.djangoproject.com/fr/5.2/intro/tutorial02/  
+  https://docs.djangoproject.com/fr/5.2/intro/tutorial03/
 
-**Exos**
+**Exercices**
 
-- Ajouter des templates propres :
-  - `base.html` avec Bootstrap ou Tailwind CDN
-  - Liste de livres avec pagination
-  - Page détail avec mise en forme propre
+- Créer un `base.html` avec Bootstrap ou Tailwind (CDN).
+- Liste de livres avec pagination.
+- Page détail bien mise en forme.
 
 ---
 
@@ -238,18 +251,19 @@ Fonctionnalités :
 
 **Cours**
 
-- OC Django : relations ManyToOne / ManyToMany :contentReference[oaicite:14]{index=14}  
+- Relations dans le cours Django OC :  
+  https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django  
 
-**Exos**
+**Exercices**
 
-- Ajouter modèles :
-  - `Author` (nom, bio)
-  - `Category` (nom)
+- Modèle `Author` (nom, bio).
+- Modèle `Category` (nom).
 - Relations :
-  - `Book` → `Author` (ForeignKey)
-  - `Book` → `Category` (ManyToMany)
-- Template :
-  - Afficher les catégories pour chaque livre.
+  - `Book` → `Author` (ForeignKey).
+  - `Book` → `Category` (ManyToMany).
+- Afficher pour chaque livre :
+  - L’auteur.
+  - La liste des catégories.
 
 ---
 
@@ -257,28 +271,29 @@ Fonctionnalités :
 
 **Cours**
 
-- OC Django : formulaires & auth (login/logout, gestion utilisateurs) :contentReference[oaicite:15]{index=15}  
+- Formulaires et authentification dans le cours OC Django :  
+  https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django  
 
-**Exos**
+**Exercices**
 
-- Créer un formulaire pour ajouter un livre (vue class-based ou fonction).
-- Créer un système d’inscription simple :
-  - `/signup`, `/login`, `/logout`
-  - Restreindre l’ajout de livres aux utilisateurs connectés.
+- Créer un formulaire pour ajouter un livre (form classique ou `ModelForm`).
+- Système d’inscription / connexion :
+  - `/signup`, `/login`, `/logout`.
+- Restreindre la création de livres aux utilisateurs connectés.
 
 ---
 
-### Jour 12 – Django avancé (class-based views, messages, context processors)
+### Jour 12 – Django avancé : Class-Based Views, messages, etc.
 
 **Cours**
 
-- Continuer le cours OC “Débutez avec le framework Django” et commencer **“Allez plus loin avec le framework Django”** :contentReference[oaicite:16]{index=16}  
-  👉 https://openclassrooms.com/fr/courses/7192426-allez-plus-loin-avec-le-framework-django  
+- OpenClassrooms – “Allez plus loin avec le framework Django” :  
+  https://openclassrooms.com/fr/courses/7192426-allez-plus-loin-avec-le-framework-django  
 
-**Exos**
+**Exercices**
 
-- Convertir certaines vues en `ListView`, `DetailView`, `CreateView`.
-- Utiliser le système de `messages` pour afficher les notifications (succès/erreurs).
+- Transformer certaines vues en `ListView`, `DetailView`, `CreateView`.
+- Utiliser le système de `messages` pour afficher les notifications.
 
 ---
 
@@ -288,22 +303,22 @@ Fonctionnalités :
 
 Fonctionnalités :
 
-- Auth (signup/login/logout)
-- CRUD posts (titre, contenu, image optionnelle)
-- Commentaires simples (modèle `Comment`)
+- Auth (signup/login/logout).
+- CRUD posts (titre, contenu, image optionnelle).
+- Modèle `Comment`.
 - Pages :
-  - Liste des articles
-  - Article détaillé
-  - Création / édition / suppression d’un article (auteur = user connecté)
+  - Liste des articles.
+  - Article détaillé.
+  - Création / édition / suppression d’un article (auteur = user connecté).
 
 ---
 
 ### Jour 14 – Review & amélioration
 
-- Refacto du code :
-  - Utiliser des `forms.py`
-  - Mettre les URL dans `urls.py` d’app et les inclure dans `project/urls.py`
-- Mettre le projet sur GitHub avec README.
+- Refactor du code :
+  - Déplacer les formulaires dans `forms.py`.
+  - Structurer les `urls.py` par app.
+- Publier le projet sur GitHub avec un bon README.
 
 ---
 
@@ -311,61 +326,70 @@ Fonctionnalités :
 
 ### Objectif de la semaine
 
-- Créer des API propres avec Django REST Framework.
-- Apprendre l’authentification (token/JWT).
-- Voir les tests automatisés et le déploiement (Heroku/Railway/Render).
+- Créer des APIs propres avec Django REST Framework (DRF).
+- Gérer l’authentification (Token / JWT).
+- Apprendre les tests d’API et le déploiement.
 
 ---
 
 ### Ressources principales
 
-- OpenClassrooms – **“Mettez en place une API avec Django REST Framework”** :contentReference[oaicite:17]{index=17}  
-  👉 https://openclassrooms.com/fr/courses/7192416-mettez-en-place-une-api-avec-django-rest-framework  
-- Docs Django REST Framework : https://www.django-rest-framework.org/  
+- OpenClassrooms – “Mettez en place une API avec Django REST Framework” :  
+  https://openclassrooms.com/fr/courses/7192416-mettez-en-place-une-api-avec-django-rest-framework  
+- Django REST Framework – Documentation officielle :  
+  https://www.django-rest-framework.org/
 
 ---
 
-### Jour 15 – Introduction à Django REST Framework (DRF)
+### Jour 15 – Introduction à Django REST Framework
 
 **Cours**
 
-- Installer DRF, créer une API simple sur le modèle Book (liste/détail) :contentReference[oaicite:18]{index=18}  
+- Installation de DRF et première API (cours OC) :  
+  https://openclassrooms.com/fr/courses/7192416-mettez-en-place-une-api-avec-django-rest-framework  
 
-**Exos**
+**Exercices**
 
-- API `/api/books/` (GET/POST)
-- API `/api/books/<id>/` (GET/PUT/DELETE)
-- Serializer `BookSerializer`.
+- API `/api/books/` (GET/POST).
+- API `/api/books/<id>/` (GET/PUT/DELETE).
+- Créer un `BookSerializer`.
 
 ---
 
-### Jour 16 – Authentification & permissions dans DRF
+### Jour 16 – Authentification & Permissions dans DRF
 
 **Cours**
 
-- Chapitres du cours OC sur la sécurisation d’API :contentReference[oaicite:19]{index=19}  
+- Sécurisation d’API dans le cours OC DRF (auth, permissions) :  
+  https://openclassrooms.com/fr/courses/7192416-mettez-en-place-une-api-avec-django-rest-framework  
 
-**Exos**
+**Exercices**
 
-- Auth basée sur Token ou JWT (via `djangorestframework-simplejwt`).
-- Protéger la création/modif/suppression de livres :
-  - Anonyme → lecture seule
-  - Utilisateur authentifié → CRUD sur ses propres ressources.
+- Installer `djangorestframework-simplejwt` :  
+  https://github.com/jazzband/djangorestframework-simplejwt  
+- Mettre en place :
+  - Auth JWT.
+  - Permissions :
+    - Anonymes → lecture seule.
+    - Authentifiés → CRUD sur leurs propres ressources.
 
 ---
 
-### Jour 17 – Tests unitaires & intégration
+### Jour 17 – Tests unitaires & intégration (APIs)
 
 **Cours**
 
-- Voir comment écrire des tests Django + DRF (tests API, clients de test)  
-  (Tutoriel officiel Django, section tests, + doc DRF “Testing”)
+- Tests Django :  
+  https://docs.djangoproject.com/fr/5.2/topics/testing/  
+- Tests DRF :  
+  https://www.django-rest-framework.org/api-guide/testing/
 
-**Exos**
+**Exercices**
 
-- Test : liste des livres renvoie 200.
-- Test : création de livre nécessite authentification.
-- Test : utilisateur ne peut pas modifier le livre d’un autre.
+- Tests :
+  - Liste des livres renvoie 200.
+  - Création d’un livre nécessite un token.
+  - Un utilisateur ne peut pas modifier le livre d’un autre.
 
 ---
 
@@ -373,53 +397,57 @@ Fonctionnalités :
 
 **Cours**
 
-- Choisir un PaaS : Render, Railway, ou autre (docs officielles).
-- Lire une ressource sur le déploiement Django + Postgres (par ex. docs Render ou article blog).
+- Choisir un PaaS : Render / Railway / Heroku (si dispo).
+  - Render :  
+    https://render.com/docs/deploy-django  
+  - Railway :  
+    https://docs.railway.app/guides/django  
 
-**Exos**
+**Exercices**
 
-- Déployer la mini-API ou le mini-blog de la semaine 2 sur un PaaS gratuit.
+- Déployer la mini-API (books ou blog) sur Render ou Railway.
 - Configurer :
-  - Variables d’environnement
-  - `DEBUG=False`
-  - Static files (whitenoise ou stockage S3-like)
+  - Variables d’environnement.
+  - `DEBUG=False`.
+  - Gestion des fichiers statiques (whitenoise ou équivalent).
 
 ---
 
 ### Jour 19 – API orientée Data
 
-**Objectif :** connecter la partie “Data” de ton collègue au web.
-
-**Exos**
+**Exercices**
 
 - Créer un endpoint `/api/predictions/` dans DRF qui :
-  - Reçoit des features en JSON (ex: `age`, `salary`, etc.)
-  - Appelle une fonction Python (mock d’un modèle ML) qui renvoie une prédiction.
-  - Renvoie le résultat en JSON.
+  - Reçoit des features en JSON (ex : `age`, `salary`, etc.).
+  - Appelle une fonction Python (simulant un modèle ML) pour renvoyer une prédiction.
+  - Retourne le résultat en JSON.
 
 ---
 
 ### Jour 20 – Mini-projet API Django
 
-**Mini-projet 3 : “API de gestion de tâches / todo + stats”**
+**Mini-projet 3 : “API de gestion de tâches + stats”**
 
 Fonctionnalités :
 
-- Modèle `Task` (titre, description, statut, date_due, owner=user)
-- API DRF complète :
-  - CRUD
-  - Filtre par statut / date / owner
+- Modèle `Task` (titre, description, statut, date_due, owner).
+- API DRF :
+  - CRUD complet.
+  - Filtre par statut / date / owner.
 - Endpoint `/api/stats/` :
-  - Nombre de tâches complétées / en cours
-  - Option : retourner un petit agrégat pour une visualisation future.
+  - Nombre de tâches complétées / en cours / en retard.
 
 ---
 
-### Jour 21 – Review & documentation
+### Jour 21 – Documentation & nettoyage
 
-- Ajouter une doc API simple (via `drf-yasg` ou `drf-spectacular`).
+- Ajouter une doc API avec :
+  - drf-yasg :  
+    https://github.com/axnsan12/drf-yasg  
+  - ou drf-spectacular :  
+    https://drf-spectacular.readthedocs.io/  
 - Documenter tous les endpoints dans un `README.md`.
-- Exporter une collection Postman de test.
+- Exporter une collection Postman.
 
 ---
 
@@ -427,22 +455,27 @@ Fonctionnalités :
 
 ### Objectif de la semaine
 
-- Comprendre FastAPI (framework moderne pour APIs performantes).
-- Créer une API propre & typée.
-- Construire un projet final combinant Data + API + base de données.
+- Comprendre FastAPI (APIs modernes, typées, très rapides).
+- Créer un microservice API en FastAPI.
+- Faire un projet final qui combine Data + API + BDD.
 
 ---
 
 ### Ressources principales FastAPI
 
-- Doc officielle : https://fastapi.tiangolo.com/  
-- YouTube – **“FastAPI Tutorial for Beginners – Full Course (2025)”** :contentReference[oaicite:20]{index=20}  
-  👉 https://www.youtube.com/watch?v=VirndPTeRaw  
-- Playlist “FastAPI Tutorial for Beginners” :contentReference[oaicite:21]{index=21}  
-  👉 https://www.youtube.com/playlist?list=PLS1QulWo1RIamDcSq3TvwMIrkIPdiTkxA  
-- Autre crash course complet :contentReference[oaicite:22]{index=22}  
-  👉 https://www.youtube.com/watch?v=7t2alSnE2-I  
-  👉 https://www.youtube.com/playlist?list=PL6xV3OpvkyrjKvi2YfQlba93WrGb38c5L  
+- Documentation officielle :  
+  https://fastapi.tiangolo.com/  
+
+- “FastAPI Tutorial for Beginners – Full Course (2025)” (EN) – YouTube :  
+  https://www.youtube.com/watch?v=VirndPTeRaw  
+
+- Playlist “FastAPI Tutorial for Beginners” :  
+  https://www.youtube.com/playlist?list=PLS1QulWo1RIamDcSq3TvwMIrkIPdiTkxA  
+
+- Autre crash course FastAPI (EN) :  
+  https://www.youtube.com/watch?v=7t2alSnE2-I  
+  Playlist complémentaire :  
+  https://www.youtube.com/playlist?list=PL6xV3OpvkyrjKvi2YfQlba93WrGb38c5L  
 
 ---
 
@@ -450,14 +483,17 @@ Fonctionnalités :
 
 **Cours**
 
-- Premiers chapitres du cours vidéo complet (au moins la première heure) :contentReference[oaicite:23]{index=23}  
+- Doc FastAPI : tutoriel rapide :  
+  https://fastapi.tiangolo.com/tutorial/  
+- Première heure de la vidéo YouTube complète (VirndPTeRaw).
 
-**Exos**
+**Exercices**
 
-- Créer un projet FastAPI :
-  - Endpoint `GET /` → “Hello FastAPI”
-  - Endpoint `GET /items/{id}` → retourne un item factice
-- Lancer avec `uvicorn main:app --reload`.
+- Projet FastAPI :
+  - Endpoint `GET /` → “Hello FastAPI”.
+  - Endpoint `GET /items/{id}` → retourne un item factice.
+- Lancer avec :  
+  `uvicorn main:app --reload`.
 
 ---
 
@@ -465,14 +501,15 @@ Fonctionnalités :
 
 **Cours**
 
-- Sections de la doc sur Pydantic models (FastAPI docs).  
+- Modèles Pydantic dans la doc FastAPI :  
+  https://fastapi.tiangolo.com/tutorial/body/
 
-**Exos**
+**Exercices**
 
-- Créer un modèle `User` (nom, email, is_active).
+- Modèle `User` (nom, email, is_active).
 - Endpoint `POST /users/` :
-  - Valide le JSON reçus via un `UserCreate` Pydantic model.
-  - Retourne l’utilisateur créé (en mémoire pour l’instant).
+  - Valide le JSON via un `UserCreate` (Pydantic).
+  - Retourne l’utilisateur créé (stocké en mémoire pour l’instant).
 
 ---
 
@@ -480,12 +517,13 @@ Fonctionnalités :
 
 **Cours**
 
-- Chapitres sur FastAPI + BDD (SQLAlchemy) dans la doc.  
+- FastAPI + SQL DB :  
+  https://fastapi.tiangolo.com/tutorial/sql-databases/
 
-**Exos**
+**Exercices**
 
-- Lier la FastAPI à une base SQLite / Postgres.
-- Créer un modèle `PredictionRequest` et `PredictionResult`.
+- Lier FastAPI à une BDD SQLite ou Postgres.
+- Créer les modèles SQLAlchemy nécessaires (ex : `PredictionRequest`, `PredictionResult`).
 - CRUD simple pour stocker les historiques de prédictions.
 
 ---
@@ -494,127 +532,158 @@ Fonctionnalités :
 
 **Cours**
 
-- Sections doc FastAPI sur security (OAuth2, JWT).  
+- Sécurité / Auth dans FastAPI :  
+  https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/  
 
-**Exos**
+**Exercices**
 
-- Mettre en place une auth basique (JWT simple) :
-  - `POST /login` → retourne un token
-  - Protège un endpoint `/me` avec ce token.
+- Mettre en place une auth basique (JWT) :
+  - `POST /login` → retourne un token.
+  - `GET /me` → protégé, renvoie les infos de l’utilisateur.
+- CORS (pour un futur front externe) :  
+  https://fastapi.tiangolo.com/tutorial/cors/
 
 ---
 
-### Jour 26–27 – Projet final
+### Jours 26–27 – Projet final
 
 **Projet final : “Micro-plateforme Data API”**
 
-Idée : une API qui expose un modèle de scoring / prédiction avec historique.
+Idée : une API qui expose un modèle de scoring / prédiction, avec historique.
 
-Stack :
+**Architecture :**
 
-- **Backend principal** : Django + DRF (gestion utilisateurs, interface admin).
-- **Microservice prédiction** : FastAPI
-- **BDD** : Postgres (ou SQLite pour démarrer)
-- **Fonctionnalités :**
-  - Django :
-    - Auth + Users
-    - Modèle `Dataset` + `PredictionHistory`
-    - Panel admin pour voir les requêtes de prédiction
-  - FastAPI :
-    - Endpoint `/predict` qui prend des features en JSON
-    - Appelle une fonction Python qui renvoie une prédiction (ex. modèle de régression linéaire simulé)
-  - Communication :
-    - Django envoie les données à FastAPI (requests HTTP)
-    - FastAPI renvoie la prédiction
-    - Django stocke la prédiction dans `PredictionHistory`
+- Backend principal : Django + DRF (gestion des utilisateurs, interface admin).
+- Microservice de prédiction : FastAPI.
+- BDD : Postgres (ou SQLite au début).
+
+**Fonctionnalités Django :**
+
+- Auth + Users.
+- Modèles :
+  - `Dataset` (optionnel).
+  - `PredictionHistory` (features + résultat + date + user).
+- Panel admin pour visualiser les prédictions.
+
+**Fonctionnalités FastAPI :**
+
+- Endpoint `/predict` qui :
+  - Prend des features en JSON.
+  - Appelle une fonction Python (ex : modèle ML, même simplifié).
+  - Retourne la prédiction + métadonnées (score, label, etc.).
+
+**Communication Django ↔ FastAPI :**
+
+- Django :
+  - Expose un endpoint `/api/predictions/`.
+  - Quand une demande arrive :
+    - Envoie les données au service FastAPI (HTTP, via `requests`).
+    - Récupère la réponse.
+    - Sauvegarde dans `PredictionHistory`.
+    - Retourne la réponse au client.
 
 **Livrables :**
 
-- 2 repos Git (ou un monorepo avec 2 dossiers : `django_backend/` et `fastapi_service/`)
+- Soit 2 repos Git séparés : `django_backend/` et `fastapi_service/`.
+- Soit un monorepo avec les 2 dossiers.
 - Documentation :
-  - README racine expliquant l’architecture
-  - README pour Django + README pour FastAPI
-- Export Postman avec tous les endpoints.
+  - README racine expliquant l’architecture globale.
+  - README pour Django.
+  - README pour FastAPI.
+- Collection Postman avec :
+  - Endpoints Django (auth, prédictions, historique).
+  - Endpoint FastAPI (`/predict`).
 
 ---
 
 ### Jour 28 – Polish & Portfolio
 
-- Nettoyage du code, refacto des noms, commentaires.
-- Ajout de tests sur les endpoints clés.
-- Ajout de captures d’écran + diagramme simple d’architecture dans le README.
-- Mettre les projets sur GitHub (et les lier sur LinkedIn/portfolio).
+- Nettoyage du code, refactor des noms de variables et fonctions.
+- Ajout de tests sur les endpoints clés (Django + FastAPI).
+- Ajout de captures d’écran et d’un petit diagramme d’architecture dans le README.
+- Mettre tous les projets sur GitHub et les lier sur le CV / LinkedIn.
 
 ---
 
-## 7. Ressources complémentaires (à picorer pendant le mois)
+## 7. Ressources complémentaires
 
-### Django (FR + EN)
+### Django
 
-- OpenClassrooms – “Débutez avec le framework Django” :contentReference[oaicite:24]{index=24}  
-  👉 https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django  
-- OpenClassrooms – “Allez plus loin avec le framework Django” :contentReference[oaicite:25]{index=25}  
-  👉 https://openclassrooms.com/fr/courses/7192426-allez-plus-loin-avec-le-framework-django  
-- MyMooc – “Développez votre site web avec le framework Django” :contentReference[oaicite:26]{index=26}  
-  👉 https://www.my-mooc.com/fr/mooc/developpez-votre-site-web-avec-le-framework-django-c9c71957-c352-47bb-b06a-0e5d53d5f429  
-- Tutoriel PDF “Créer un site Web avec Django pour Python” :contentReference[oaicite:27]{index=27}  
-  👉 https://www.labri.fr/perso/baudon/IremInfo/uploads/Main/HomePage/Django.pdf  
+- OpenClassrooms – “Débutez avec le framework Django” :  
+  https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django  
 
-- Vidéo – “Python Django - Apprendre le Développement Web” (formation complète FR) :contentReference[oaicite:28]{index=28}  
-  👉 https://www.youtube.com/watch?v=vN3_jywhg_E  
+- OpenClassrooms – “Allez plus loin avec le framework Django” :  
+  https://openclassrooms.com/fr/courses/7192426-allez-plus-loin-avec-le-framework-django  
 
-- Guide “Apprendre : Django (Guide A à Z + Ressources)” :contentReference[oaicite:29]{index=29}  
-  👉 https://www.learnthings.fr/apprendre/informatique/langages-de-programmation/python/django/
+- MyMooc – “Développez votre site web avec le framework Django” :  
+  https://www.my-mooc.com/fr/mooc/developpez-votre-site-web-avec-le-framework-django-c9c71957-c352-47bb-b06a-0e5d53d5f429  
+
+- Tutoriel PDF – “Créer un site Web avec Django pour Python” :  
+  https://www.labri.fr/perso/baudon/IremInfo/uploads/Main/HomePage/Django.pdf  
+
+- Vidéo YouTube – “Python Django - Apprendre le Développement Web” (FR) :  
+  https://www.youtube.com/watch?v=vN3_jywhg_E  
+
+- Guide “Apprendre : Django (Guide A à Z + Ressources)” :  
+  https://www.learnthings.fr/apprendre/informatique/langages-de-programmation/python/django/
 
 ---
 
 ### Flask
 
-- OpenClassrooms – “Concevez un site avec Flask” :contentReference[oaicite:30]{index=30}  
-  👉 https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask  
-- MyMooc – Introduction à Flask (même cours OC, agrégateur) :contentReference[oaicite:31]{index=31}  
-  👉 https://www.my-mooc.com/fr/mooc/introduction-a-flask-6c0110d1-0f83-49a0-aafc-5c72976b5e0c  
+- OpenClassrooms – “Concevez un site avec Flask” :  
+  https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask  
+
+- MyMooc – Introduction à Flask (même formation OC, agrégée) :  
+  https://www.my-mooc.com/fr/mooc/introduction-a-flask-6c0110d1-0f83-49a0-aafc-5c72976b5e0c  
 
 ---
 
 ### FastAPI
 
-- Doc officielle :  
-  👉 https://fastapi.tiangolo.com/  
-- “FastAPI Tutorial for Beginners – Full Course (2025)” :contentReference[oaicite:32]{index=32}  
-  👉 https://www.youtube.com/watch?v=VirndPTeRaw  
-- Playlist “FastAPI Tutorial for Beginners” :contentReference[oaicite:33]{index=33}  
-  👉 https://www.youtube.com/playlist?list=PLS1QulWo1RIamDcSq3TvwMIrkIPdiTkxA  
-- Crash course complet :contentReference[oaicite:34]{index=34}  
-  👉 https://www.youtube.com/watch?v=7t2alSnE2-I  
-  👉 https://www.youtube.com/playlist?list=PL6xV3OpvkyrjKvi2YfQlba93WrGb38c5L  
+- Documentation officielle :  
+  https://fastapi.tiangolo.com/  
+
+- FastAPI Full Course – YouTube :  
+  https://www.youtube.com/watch?v=VirndPTeRaw  
+
+- Playlist “FastAPI Tutorial for Beginners” :  
+  https://www.youtube.com/playlist?list=PLS1QulWo1RIamDcSq3TvwMIrkIPdiTkxA  
+
+- Crash course FastAPI :  
+  https://www.youtube.com/watch?v=7t2alSnE2-I  
+  Playlist associée :  
+  https://www.youtube.com/playlist?list=PL6xV3OpvkyrjKvi2YfQlba93WrGb38c5L  
 
 ---
 
-### Plateformes & chaînes généralistes
+### Plateformes / chaînes utiles
 
-- OpenClassrooms (général, Python, web) :contentReference[oaicite:35]{index=35}  
-  👉 https://openclassrooms.com/  
-- Grafikart (tutos FR, même si plutôt orienté JS/PHP, la méthodo est excellente) :contentReference[oaicite:36]{index=36}  
-  👉 https://grafikart.fr/  
-  👉 https://www.youtube.com/@grafikart  
+- OpenClassrooms (général) :  
+  https://openclassrooms.com/  
+
+- Grafikart (tutos FR, très bonne pédagogie même si pas toujours Python) :  
+  Site : https://grafikart.fr/  
+  YouTube : https://www.youtube.com/@grafikart  
 
 ---
 
-## 8. Conseils pour tirer le maximum de cette formation
+## 8. Conseils pour suivre la formation
 
 1. **Un repo par projet**  
-   Chaque mini-projet a son propre repo Git → bon pour le portfolio.
+   Chaque mini-projet = un dépôt Git → parfait pour le portfolio.
 
-2. **Écrire du code tous les jours**  
-   Même 1h : corriger un bug, ajouter un test, refactoriser une vue.
+2. **Coder tous les jours**  
+   Même si c’est 1h : corriger un bug, ajouter un test, améliorer une vue.
 
-3. **Noter les difficultés**  
-   Tenir un petit journal (Markdown) : “ce que j’ai compris aujourd’hui / ce qui reste flou”.
+3. **Tenir un journal de progression**  
+   Un fichier Markdown du type :
+   - “Ce que j’ai appris aujourd’hui”
+   - “Ce que je n’ai pas compris”
 
-4. **Rester proche de la data**  
+4. **Relier tout ça à la data**  
    À chaque fois que possible :
-   - Créer un endpoint API qui retourne un petit calcul statistique.
-   - Exposer un mini-modèle ML ou un script d’analyse.
+   - Exposer un petit modèle ML / script d’analyse via une API.
+   - Garder des historiques dans la base pour pouvoir analyser plus tard.
 
 ---
