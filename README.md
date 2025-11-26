@@ -1,6 +1,6 @@
 # Formation Web Python – 1 mois (Django / Flask / FastAPI)
 
-> Objectif : En 4 semaines, passer de “je connais un peu Python / la data” à “je sais développer et déployer une vraie appli web/API en Django, Flask et FastAPI”.
+> Objectif : En 4 semaines, développer et déployer une vraie appli web/API en Django, Flask et FastAPI”.
 
 ---
 
