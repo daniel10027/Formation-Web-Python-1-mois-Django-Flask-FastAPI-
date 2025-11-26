@@ -14,7 +14,7 @@ Avant d’attaquer le mois, ton collègue doit idéalement :
 - ✅ Avoir déjà utilisé un terminal / Git de base.
 
 Pour se mettre à niveau rapidement en Python (facultatif mais conseillé) :  
-- Parcours **“Développeur d’application Python”** – OpenClassrooms (chapitres sur Python de base) :contentReference[oaicite:0]{index=0}  
+- Parcours **“Développeur d’application Python”** – OpenClassrooms (chapitres sur Python de base)
   👉 https://static.oc-static.com/syllabus/518-developpeur-dapplication-python-1-fr-fr-standard.pdf  
 
 ---
